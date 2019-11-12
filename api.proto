@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package api;
+
+option go_package = "grpcTest/api;api";
+
+message Request {
+	string question = 1;
+}
+
+message Response {
+	string answer = 1;
+}
+
+message Requests {
+	repeated Request items = 1;
+}
